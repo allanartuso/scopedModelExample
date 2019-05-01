@@ -21,10 +21,14 @@ class _MyAppState extends State<MyApp> {
       model: MainScoped(),
       child: MaterialApp(
         theme: ThemeData(
-            brightness: Brightness.light,
-            primarySwatch: Colors.green,
-            accentColor: Colors.greenAccent,
-            buttonColor: Colors.indigoAccent),
+          brightness: Brightness.light,
+          primarySwatch: Colors.green,
+          accentColor: Colors.white,
+          buttonTheme: ButtonThemeData(
+            textTheme: ButtonTextTheme.accent,
+            buttonColor: Colors.deepOrange,
+          ),
+        ),
         routes: {
           '/': (context) => Home(),
           '/helloPage': (context) => Hello(),
