@@ -1,7 +1,7 @@
 import '../models/helloModel.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-mixin HelloModel on Model {
+mixin HelloScoped on Model {
   Hello _data = Hello(title: "Hello scopedModel!", description: "z");
 
   Hello get data {
